@@ -68,11 +68,12 @@ jobs:
     name: pdf
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3.0.2
         with:
           # This is necessary so that we have the tags.
           fetch-depth: 0
           ref: main
+          token: ${{ secrets.SIREDMAR_GITHUB_IO }}
       # Use GitHub Actions' cache to cache dependencies on servers
       - name: html to pdf
         uses: misaelnieto/web_to_pdf_action@v0.3.1
