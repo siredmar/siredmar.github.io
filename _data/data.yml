@@ -120,14 +120,14 @@ experiences:
         - Development of hardware-related software components for embedded systems for Automotive applications.
         - Software design and implementation of drivers and test software for hardware qualification.
 
-# projects:
-#   title: Projects
-#   intro: >
-#     The most noteworthy projects I've worked on with varying degrees of involvement.
-#   assignments:
-#     - title: Velocity
-#       link: "#hook"
-#       tagline: "A responsive website template designed to help startups promote, market and sell their products."
+projects:
+  title: Projects
+  intro: >
+    Here are some projects i am working on.
+  assignments:
+    - title: EdgeFarm
+      link: "github.com/edgefarm"
+      tagline: "A platform for developers to get their edge computing applications done. Based on Kubernetes."
 
 #     - title: DevStudio
 #       link: "#"
