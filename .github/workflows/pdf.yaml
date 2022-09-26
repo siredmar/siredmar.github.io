@@ -74,14 +74,14 @@ jobs:
         with:
           # This is necessary so that we have the tags.
           fetch-depth: 0
-          ref: main
+          ref: assets
           token: ${{ secrets.SIREDMAR_GITHUB_IO }}
       # Use GitHub Actions' cache to cache dependencies on servers
       - name: html to pdf
         uses: misaelnieto/web_to_pdf_action@v0.3.1
         with:
           webPageURL: https://siredmar.github.io
-          outputFile: assets/pdf/Resume.pdf
+          outputFile: Resume.pdf
           usePuppeteer: true
           pdfOptions: '{"format": "A4", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
       - name: Commit changes
@@ -89,4 +89,4 @@ jobs:
         with:
           default_author: github_actor
           message: "Update Resume.pdf"
-          add: "assets/pdf/Resume.pdf"
+          add: "Resume.pdf"
