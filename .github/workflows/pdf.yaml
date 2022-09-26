@@ -69,12 +69,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       # Use GitHub Actions' cache to cache dependencies on servers
-      - uses: actions/cache@v2
-        with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gems-
       - name: html to pdf
         uses: misaelnieto/web_to_pdf_action@v0.3.1
         with:
@@ -85,5 +79,5 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Generate PDF
-          branch: gh-pages
+          branch: main
           file_pattern: assets/pdf/Resume.pdf
