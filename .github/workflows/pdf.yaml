@@ -64,10 +64,15 @@ jobs:
 
   # Generate the PDF
   generate:
+    needs: deploy
     name: Deploy gh-page and generate new PDF file
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
+        with:
+          # This is necessary so that we have the tags.
+          fetch-depth: 0
+          ref: main
       # Use GitHub Actions' cache to cache dependencies on servers
       - name: html to pdf
         uses: misaelnieto/web_to_pdf_action@v0.3.1
