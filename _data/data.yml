@@ -126,7 +126,7 @@ projects:
     Here are some projects i am working on.
   assignments:
     - title: EdgeFarm
-      link: "github.com/edgefarm"
+      link: https://github.com/edgefarm
       tagline: "A platform for developers to get their edge computing applications done. Based on Kubernetes."
 
 #     - title: DevStudio
