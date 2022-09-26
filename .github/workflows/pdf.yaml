@@ -1,16 +1,30 @@
-name: Generate PDF
-
-on: ["deployment"]
+name: CI
+on:
+  push:
+    branches:
+      - gh-pages
 
 jobs:
   generate:
     name: Generate PDF
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+      - name: Gatsby Publish
+        uses: enriikke/gatsby-gh-pages-action@v2.1.1
+        with:
+          access-token: ${{ secrets.GITHUB_TOKEN }}
+          deploy-branch: gh-pages
+          gatsby-args: --prefix-paths
       - name: html to pdf
         uses: misaelnieto/web_to_pdf_action@v0.3.1
         with:
           webPageURL: https://siredmar.github.io/online-cv/
-          outputFile: ./assets/pdf/Resume.pdf
+          outputFile: assets/pdf/Resume.pdf
           usePuppeteer: true
           pdfOptions: '{"format": "A4", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Generate PDF
+          branch: gh-pages
+          file_pattern: assets/pdf/Resume.pdf
