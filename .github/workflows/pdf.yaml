@@ -67,7 +67,7 @@ jobs:
     name: Deploy gh-page and generate new PDF file
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       # Use GitHub Actions' cache to cache dependencies on servers
       - name: html to pdf
         uses: misaelnieto/web_to_pdf_action@v0.3.1
@@ -76,8 +76,9 @@ jobs:
           outputFile: assets/pdf/Resume.pdf
           usePuppeteer: true
           pdfOptions: '{"format": "A4", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
-      - uses: stefanzweifel/git-auto-commit-action@v4
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v8
         with:
-          commit_message: Generate PDF
-          branch: main
-          file_pattern: assets/pdf/Resume.pdf
+          default_author: github_actor
+          message: "Update Resume.pdf"
+          add: "assets/pdf/Resume.pdf"
