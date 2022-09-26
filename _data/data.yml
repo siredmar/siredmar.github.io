@@ -1,0 +1,197 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+
+sidebar:
+  about: false # set to False or comment line if you want to remove the "how to use?" in the sidebar
+  education: True # set to False if you want education in main section instead of in sidebar
+
+  # Profile information
+  name: Armin Schlegel
+  tagline:
+  avatar: profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+  # Sidebar links
+  email: armin.schlegel@gmx.de
+  phone:
+  timezone: Europe/Berlin Timezone
+  citizenship: Germany
+  website: #do not add http://
+  linkedin: siredmar
+  xing: Armin_Schlegel5
+  github: siredmar
+  telegram: # add your nickname without '@' sign
+  gitlab:
+  bitbucket:
+  twitter:
+  stack-overflow: # Number/Username, e.g. 123456/alandoe
+  codewars:
+  goodreads: # Number-Username, e.g. 123456-alandoe
+  pdf: https://siredmar.github.io/online-cv/assets/pdf/Resume.pdf
+
+  languages:
+    title: Languages
+    info:
+      - idiom: German
+        level: Native
+
+      - idiom: English
+        level: Professional
+
+  interests:
+    title: Interests
+    info:
+      - item: My Familiy
+        link:
+
+      - item: 3D Printing
+        link:
+
+      - item: Cooking
+        link:
+
+career-profile:
+  title: Career Profile
+  summary: |
+    I am a highly motivated and eager to learn Software Engineer, currently working as a developer at Ci4Rail GmbH, Germany.
+
+    In the past i developed software and hardware for embedded systems, mainly for the automotive industry. 
+    Nowadays i am more into the cloud and kubernetes stuff. 
+
+    ❤️   I love to learn new things and to share my knowledge with others.
+
+    ⚽   I am a team player and i like to work in a team. 
+
+    📚   I am also a fast learner and i am always open for new challenges.
+
+    ⎔   I am a big fan of open source software. 
+
+    🐛  If a open source project lacks a feature i need or has a bug, i'll try to add the feature or fix it.
+
+
+    Currently i am working on the open source **EdgeFarm** project.
+
+education:
+  title: Education
+  info:
+    - degree: M.Eng. in Electronical Engineering
+      university: TH Nuremberg, Germany
+      time: 2013 - 2014
+      details:
+    - degree: B.Eng. in Electronical Engineering
+      university: TH Nuremberg, Germany
+      time: 2005 - 2012
+      details:
+experiences:
+  title: Experiences
+  info:
+    - role: Senior R&D Engineer
+      time: 2020 - Present
+      company: Ci4Rail GmbH, Nuremberg, Germany
+      details: |
+        Architecture and Developing of the open source project `EdgeFarm`. 
+        EdgeFarm is build for developers to support them in the development of complex IoT applications.
+        By using EdgeFarm the developer can focus on the business logic only and does not have to worry about the infrastructure and the security of the application.
+        `EdgeFarm` is a continuation of project `elbb`. `EdgeFarm` is a cloud-native edge computing platform. 
+        It supports the deployment of edge applications and services on edge devices. It is based on Kubernetes and
+        provides a set of tools to manage edge devices and applications.
+        It contains the following components:
+          - edgefarm.core: The core component of the EdgeFarm platform. It is responsible for the management of edge devices and applications.
+          - edgefarm.applications: Allows the user to easily deploy workload to the edge devices.
+          - edgefarm.network: Provides the running applications to transfer gathered sensor data to the cloud. The cloud can aggregate data from multiple edge devices and provide the data to the user.
+          - edgefarm.monitor: Provides the user with a dashboard to monitor the status of the edge devices and applications as well the whole Kubernetes cluster.
+
+    - role: Software Engineer
+      time: 2017 - 2020
+      company: conplement AG, Nuremberg, Germany
+      details: |
+        - Development of internal components of a semi-automatic kitchen appliance of the world market leader.
+        - Consulting in a project with digital signal processing.
+        - Basic architecture and implementation of `elbb` - embedded Linux Building Blocks. The `elbb` project was started to help developers of embedded Linux applications solve recurring problems without the developer having to worry about them.
+    - role: Software Engineer
+      time: 2016 - 2017
+      company: HSP Barschat & Krönert GmbH, Wendelstein, Germany
+      details: |
+        - Development of hardware-related software components for embedded systems and AMD64 platforms.
+        - Application for Digital signal processing application with GUI written in C# and *.net*.
+    - role: Software Engineer
+      time: 2012 - 2017
+      company: Cosyst Control Systems GmbH, Nuremberg, Germany
+      details: |
+        - Development of hardware-related software components for embedded systems for Automotive applications.
+        - Software design and implementation of drivers and test software for hardware qualification.
+
+# projects:
+#   title: Projects
+#   intro: >
+#     The most noteworthy projects I've worked on with varying degrees of involvement.
+#   assignments:
+#     - title: Velocity
+#       link: "#hook"
+#       tagline: "A responsive website template designed to help startups promote, market and sell their products."
+
+#     - title: DevStudio
+#       link: "#"
+#       tagline: "A responsive website template designed to help web developers/designers market their services."
+
+#     - title: Tempo
+#       link: "#"
+#       tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+
+#     - title: Atom
+#       link: "#"
+#       tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
+
+#     - title: Delta
+#       link: "#"
+#       tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+
+# publications:
+#   title: Publications
+#   intro: |
+#     You can list your publications in this section. Lorem ipsum dolor sit
+#     amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
+#     bibendum fringilla a eu lectus.
+#   papers:
+#     - title: The Art of Computer Programming
+#       link: "#"
+#       authors: Donald E. Knuth
+#       conference: Addison-Wesley, 1968
+
+#     - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
+#       link: "#"
+#       authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
+#       conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
+
+#     - title: A syntax directed compiler for Algol 60
+#       link: "#"
+#       authors: Edgar T. Irons
+#       conference: "Comm. ACM 4 (1961), 51–55"
+
+skills:
+  title: Skills &amp; Proficiency
+
+  toolset:
+    - name: Golang
+      level: 90%
+
+    - name: Linux & Shell Scripting
+      level: 95%
+
+    - name: Docker
+      level: 95%
+
+    - name: Git
+      level: 95%
+
+    - name: CI / CD
+      level: 80%
+
+    - name: Kubernetes
+      level: 75%
+
+    - name: C/C++
+      level: 95%
+
+footer: >
+  Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
