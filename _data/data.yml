@@ -89,16 +89,16 @@ experiences:
       company: Ci4Rail GmbH, Nuremberg, Germany
       details: |
         Architecture and Developing of the open source project `EdgeFarm`. 
-        EdgeFarm is build for developers to support them in the development of complex IoT applications.
+        EdgeFarm is build for developers to support them in the development of complex IoT applications. EdgeFarm enjoys all the benefits of Kubernetes and extends it to create a fully GitOps ready platform.
         By using EdgeFarm the developer can focus on the business logic only and does not have to worry about the infrastructure and the security of the application.
         `EdgeFarm` is a continuation of project `elbb`. `EdgeFarm` is a cloud-native edge computing platform. 
         It supports the deployment of edge applications and services on edge devices. It is based on Kubernetes and
         provides a set of tools to manage edge devices and applications.
         It contains the following components:
-          - edgefarm.core: The core component of the EdgeFarm platform. It is responsible for the management of edge devices and applications.
-          - edgefarm.applications: Allows the user to easily deploy workload to the edge devices.
-          - edgefarm.network: Provides the running applications to transfer gathered sensor data to the cloud. The cloud can aggregate data from multiple edge devices and provide the data to the user.
-          - edgefarm.monitor: Provides the user with a dashboard to monitor the status of the edge devices and applications as well the whole Kubernetes cluster.
+          - edgefarm.core: The core component of the EdgeFarm platform. It is responsible for the management of edge nodes and connected sensors.
+          - edgefarm.applications: Allows the user to easily deploy workload to either any edge devices, cloud worker nodes or combined.
+          - edgefarm.network: Provides the running applications to transfer gathered sensor data to the cloud. The cloud can aggregate data from multiple edge devices and provide the data to the user. It is built to handle unreliable connections. Simply drop your data and the internal network components will ensure that your data is delivered reliably and securely to its destination.
+          - edgefarm.monitor: Provides a full Grafana based monitoring stack to always have an eye on your IoT stack.
 
     - role: Software Engineer
       time: 2017 - 2020
@@ -127,7 +127,7 @@ projects:
   assignments:
     - title: EdgeFarm
       link: https://github.com/edgefarm
-      tagline: "A platform for developers to get their edge computing applications done. Based on Kubernetes."
+      tagline: "A Kubernetes based IoT platform to get their edge computing applications done. Seamless edge computing."
 
 #     - title: DevStudio
 #       link: "#"
