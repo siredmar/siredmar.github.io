@@ -85,10 +85,10 @@ experiences:
   title: Experiences
   info:
     - role: Senior Software Engineer
-        time: 2024 - Present
-        company: gridX GmbH, Aachen, Germany
-        details: |
-          Being part of the operations team, we ensure that our colleagues are able to run their applications on the hardware that connects, monitors and controls the distributed energy resources.
+      time: 2024 - Present
+      company: gridX GmbH, Aachen, Germany
+      details: |
+        Being part of the operations team, we ensure that our colleagues are able to run their applications on the hardware that connects, monitors and controls the distributed energy resources.
 
     - role: Senior R&D Engineer
       time: 2020 - 2024
