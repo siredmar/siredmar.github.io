@@ -53,10 +53,10 @@ sidebar:
 career-profile:
   title: Career Profile
   summary: |
-    I am a highly motivated and eager to learn Software Engineer, currently working as a developer at Ci4Rail GmbH, Germany.
+    I am a highly motivated and eager to learn Software Engineer, currently working as a software engineer at gridX GmbH.
 
     In the past i developed software and hardware for embedded systems, mainly for the automotive industry. 
-    Nowadays i am more into the cloud and kubernetes stuff. 
+    Nowadays i am more into the cloud and Kubernetes stuff. 
 
     ❤️   I love to learn new things and to share my knowledge with others.
 
@@ -68,7 +68,7 @@ career-profile:
 
     🐛  If an open source project is missing a feature i need or has a bug, i try to fix it.
 
-    Currently i am working on the open source [EdgeFarm](https://github.com/edgefarm) project.
+    My last project was the open source Kubernetes based IoT platform [EdgeFarm](https://github.com/edgefarm).
 
 education:
   title: Education
@@ -84,8 +84,14 @@ education:
 experiences:
   title: Experiences
   info:
+  - role: Senior Software Engineer
+      time: 2024 - Present
+      company: gridX GmbH, Aachen, Germany
+      details: |
+        Being part of the operations team, we ensure that our colleagues are able to run their applications on the hardware that connects, monitors and controls the distributed energy resources.
+
     - role: Senior R&D Engineer
-      time: 2020 - Present
+      time: 2020 - 2024
       company: Ci4Rail GmbH, Nuremberg, Germany
       details: |
         Architecture and Developing of the open source project `EdgeFarm`. 
